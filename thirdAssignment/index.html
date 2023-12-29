@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+
+        <form onsubmit="send(event)">
+            <div>
+                Name :<input type="text" required name="user Name" placeholder="Name">
+            </div>
+            <div>
+                Email :<input type="email" name="User Date">
+            </div>
+
+            <div>
+                DOB :<input type="date" name="User Date">
+            </div>
+
+            <div>
+                Password :<input type="password" name="userPassword" placeholder="Password">
+            </div>
+
+            <div>
+                Confirm Password :<input type="password" name="userConfirmPassword" placeholder="Password">
+            </div>
+
+            <div>
+                <button type="submit">send</button>
+            </div>
+        </form>
+
+
+    </center>
+<script>
+    function send(event) {
+        event.preventDefault()
+        console.log("submitted  successfully!");
+    }
+</script>
+</body>
+
+</html>
